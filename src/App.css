@@ -1,16 +1,30 @@
+h1 {
+  color: navy;
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
+
+.App-line {
+  width: 5vw;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.App-logo2 {
+  animation: App-logo2-color infinite 5s linear;
 }
 
 .App-header {
@@ -22,6 +36,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
 }
 
 .App-link {
@@ -31,10 +46,17 @@
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
-    filter: hue-rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo2-color {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
     filter: hue-rotate(360deg);
   }
 }
